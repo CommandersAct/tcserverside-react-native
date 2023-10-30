@@ -83,6 +83,7 @@ function onInitializedIOS(schemes: any)
     let map = new Map(Object.entries(JSON.parse(schemes)));
     TCAppInstance.initValues(map.get("app"))
     TCDeviceInstance.initValues(map.get("device"))
+    TCUserInstance.initValues(map.get("user"))
 }
 
 function onInitializedAndroid(schemes: string)
