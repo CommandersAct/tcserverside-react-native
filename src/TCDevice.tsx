@@ -203,3 +203,5 @@ export class TCDevice
         TCServerSideBridge.clearAdditionalProperties(TCDevice.name)
     }
 }
+
+export const sharedTCDeviceInstance = TCDevice.getInstance();

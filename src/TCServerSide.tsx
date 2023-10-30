@@ -1,8 +1,8 @@
 import { NativeModules, Platform } from 'react-native';
-import { TCDevice } from './TCDevice';
+import { TCDevice, sharedTCDeviceInstance } from './TCDevice';
 import { TCApp } from './TCApp';
 import {TCEvent} from './events/TCEvent'
-import { TCUser } from 'tccore-react-native'; 
+import TCUser from 'tccore-react-native'; 
 
 const LINKING_ERROR =
   `The package 'tcserverside' doesn't seem to be linked. Make sure: \n\n` +
@@ -79,13 +79,13 @@ function onInitializedIOS(schemes: any)
 {
     let map = new Map(Object.entries(JSON.parse(schemes)));
     TCApp.getInstance().initValues(map.get("app"))
-    TCDevice.getInstance().initValues(map.get("device"))
+    sharedTCDeviceInstance.initValues(map.get("device"))
 }
 
 function onInitializedAndroid(schemes: string)
 {
     let map = JSON.parse(schemes)
     TCApp.getInstance().initValues(JSON.parse(map["app"]))
-    TCDevice.getInstance().initValues(JSON.parse(map["device"]))
-    TCUser.getInstance().initValues(JSON.parse(map["user"]))
+    sharedTCDeviceInstance.initValues(JSON.parse(map["device"]))
+    TCUser.initValues(JSON.parse(map["user"]))
 }
