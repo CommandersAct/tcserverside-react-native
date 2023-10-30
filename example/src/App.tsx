@@ -2,7 +2,7 @@ import * as React from 'react';
 import { StyleSheet, TouchableOpacity, Text, View } from 'react-native';
 import * as TCServerSide from 'tcserverside-react-native';
 import { TCApp, TCDevice, TCBeginCheckoutEvent } from 'tcserverside-react-native';
-import  TCUser from 'tccore-react-native';
+import  {TCUserInstance} from 'tccore-react-native';
 
 async function initialiseServerSide()
 {
@@ -90,8 +90,8 @@ const ButtonRow = () => {
 
 function editTCUser()
 {
-  TCUser.anonymous_id = "test_anonymous_value25" 
-  TCUser.email_md5 = "email>33"
+  TCUserInstance.anonymous_id = "test_anonymous_value25" 
+  TCUserInstance.email_md5 = "email>33"
 }
 
 function printValues()
@@ -99,8 +99,8 @@ function printValues()
   
   console.log("TCUser values")
 
-  console.log(TCUser.consentID)
-  console.log(TCUser.anonymous_id)
+  console.log(TCUserInstance.consentID)
+  console.log(TCUserInstance.anonymous_id)
 
 }
 
