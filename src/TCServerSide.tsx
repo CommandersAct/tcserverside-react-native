@@ -1,8 +1,11 @@
 import { NativeModules, Platform } from 'react-native';
-import { TCDevice, sharedTCDeviceInstance } from './TCDevice';
-import { TCApp } from './TCApp';
 import {TCEvent} from './events/TCEvent'
 import {TCUserInstance} from 'tccore-react-native'; 
+import { TCDevice } from './TCDevice';
+import { TCApp } from './TCApp';
+export const TCDeviceInstance = new TCDevice();
+export const TCAppInstance = new TCApp();
+
 
 const LINKING_ERROR =
   `The package 'tcserverside' doesn't seem to be linked. Make sure: \n\n` +
@@ -78,14 +81,14 @@ export enum ETCConsentBehaviour
 function onInitializedIOS(schemes: any)
 {
     let map = new Map(Object.entries(JSON.parse(schemes)));
-    TCApp.getInstance().initValues(map.get("app"))
-    sharedTCDeviceInstance.initValues(map.get("device"))
+    TCAppInstance.initValues(map.get("app"))
+    TCDeviceInstance.initValues(map.get("device"))
 }
 
 function onInitializedAndroid(schemes: string)
 {
     let map = JSON.parse(schemes)
-    TCApp.getInstance().initValues(JSON.parse(map["app"]))
-    sharedTCDeviceInstance.initValues(JSON.parse(map["device"]))
+    TCAppInstance.initValues(JSON.parse(map["app"]))
+    TCDeviceInstance.initValues(JSON.parse(map["device"]))
     TCUserInstance.initValues(JSON.parse(map["user"]))
 }
