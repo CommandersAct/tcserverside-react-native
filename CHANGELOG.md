@@ -1,8 +1,12 @@
+## 1.2.7
+
+* Upgrade Android Core dependency to [5.4.9](https://github.com/CommandersAct/AndroidV5/blob/master/TCCore/changelog_Android_Core.md)
+
 ## 1.2.6
 
-* Upgrade Pod IOS-V5 dependency to (5.4.3)[https://github.com/CommandersAct/iOSV5/blob/master/TCCore/changelog_iOS_Core.md]
-* Upgrade Android Core dependency to (5.4.8)[https://github.com/CommandersAct/AndroidV5/blob/master/TCCore/changelog_Android_Core.md]
-* Upgrade pod TCServerSide_noIDFA dependency to (5.4.6)[https://github.com/CommandersAct/iOSV5/blob/master/TCServerSide/changelog_iOS_ServerSide.md]
+* Upgrade Pod IOS-V5 dependency to [5.4.3](https://github.com/CommandersAct/iOSV5/blob/master/TCCore/changelog_iOS_Core.md)
+* Upgrade Android Core dependency to [5.4.8](https://github.com/CommandersAct/AndroidV5/blob/master/TCCore/changelog_Android_Core.md)
+* Upgrade pod TCServerSide_noIDFA dependency to [5.4.6](https://github.com/CommandersAct/iOSV5/blob/master/TCServerSide/changelog_iOS_ServerSide.md)
 
 ## 1.2.5
 
