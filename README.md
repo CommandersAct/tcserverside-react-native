@@ -98,7 +98,6 @@ On iOS, library linking can be fragile and files may easily break or become corr
 
 8.1- In some cases, you may also need to open Xcode, clean the build folder, and run the app from the .xcworkspace file.
 
-
 # Support & Contact : 
 
 Support : support@commandersact.com

@@ -6,5 +6,5 @@ package com.tcserverside;
 
 public class TCServerSideReactNativeGenerated
 {
-    public static final String version = "1.2.7";
+    public static final String version = "1.3.0";
 }
