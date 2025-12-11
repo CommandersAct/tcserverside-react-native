@@ -92,7 +92,6 @@ dependencies {
   implementation 'com.tagcommander.lib:core:5.4.9'
   implementation 'com.tagcommander.lib:ServerSide:5.5.8'
   api 'com.google.code.gson:gson:2.10.1'
-    implementation project(path: ':commandersact_tccore-react-native')
 }
 
 if (isNewArchitectureEnabled()) {

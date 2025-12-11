@@ -8,7 +8,7 @@ export class TCSearchEvent extends TCEvent
   constructor(searchTerm?: string)
   {
     super();
-    super.name = "search";
+    this.name = "search";
     this.searchTerm = searchTerm;
   }
 }

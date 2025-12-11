@@ -41,7 +41,6 @@ import com.tagcommander.lib.serverside.events.TCViewItemListEvent;
 import com.tagcommander.lib.serverside.events.base.TCEvent;
 import com.tagcommander.lib.serverside.schemas.TCApp;
 import com.tagcommander.lib.serverside.schemas.TCDevice;
-import com.tccorereactnative.TCCoreReactNativeGenerated;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -74,7 +73,6 @@ public class TcserversideModule extends ReactContextBaseJavaModule
     TCDebug.setDebugLevel(Log.VERBOSE);
     tcServerSide = new TCServerSide(siteId, sourceKey, getReactApplicationContext().getApplicationContext(), evaluateBehaviour(defaultBehaviour));
     TCApp.getInstance().addAdditionalProperty("bridge", "react-native");
-    TCApp.getInstance().addAdditionalProperty("tccore_react_native_plugin_version", TCCoreReactNativeGenerated.version);
     TCApp.getInstance().addAdditionalProperty("tcserverside_react_native_plugin_version", TCServerSideReactNativeGenerated.version);
 
     callBack.invoke(parseSchemes());

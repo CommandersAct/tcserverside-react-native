@@ -7,6 +7,6 @@ export class TCSignUpEvent extends TCEvent
   constructor()
   {
     super();
-    super.name = "sign_up";
+    this.name = "sign_up";
   }
 }

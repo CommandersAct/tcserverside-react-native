@@ -9,7 +9,7 @@ export class TCSelectItemEvent extends TCEvent
   constructor(items?: Array<TCItem>)
   {
     super();
-    super.name = "select_item";
+    this.name = "select_item";
     this.items = items ? items : new Array<TCItem>;
   }
 }
