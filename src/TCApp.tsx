@@ -1,4 +1,4 @@
-import { TCServerSideBridge } from "./TCServerSide";
+import { TCServerSideBridge } from "./TCServerSideBridge";
 
 export class TCApp
 {

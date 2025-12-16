@@ -1,3 +1,8 @@
+## 1.3.0
+
+* The library now works with Expo apps using expo prebuild or a custom development client
+* Expo Go / managed-only workflow is not supported (native code required)
+
 ## 1.2.7
 
 * Upgrade Android Core dependency to [5.4.9](https://github.com/CommandersAct/AndroidV5/blob/master/TCCore/changelog_Android_Core.md)
