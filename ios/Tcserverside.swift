@@ -83,7 +83,7 @@ class Tcserverside: NSObject {
         tc?.removePermanentData(key)
     }
 
-    @objc(getPermanentData:callBack:)
+    @objc(getPermanentData:callback:)
     func getPermanentData(key: String, callback: RCTResponseSenderBlock) -> Void
     {
         callback([tc?.getPermanentData(key) as Any])

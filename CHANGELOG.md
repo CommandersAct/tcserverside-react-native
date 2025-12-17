@@ -1,3 +1,7 @@
+## 1.3.1
+
+* Fixing warnings for bridged functions.
+
 ## 1.3.0
 
 * The library now works with Expo apps using expo prebuild or a custom development client
